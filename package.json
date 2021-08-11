@@ -2,15 +2,21 @@
   "name": "pw-midi-node",
   "version": "1.0.0",
   "description": "",
-  "main": "src/index.js",
+  "main": "src/index.coffee",
   "dependencies": {
+    "chalk": "^4.1.2",
+    "coffeescript": "^2.5.1",
+    "color": "^4.0.0",
     "lodash": "^4.17.21",
+    "midi": "^2.0.0",
     "nodemon": "^2.0.12",
+    "terminal-kit": "^2.1.6",
     "webmidi": "^3.0.0-alpha.4"
   },
   "devDependencies": {},
   "scripts": {
-    "start": "nodemon src"
+    "dev": "nodemon src/index.coffee",
+    "start": "coffee src"
   },
   "keywords": [],
   "author": "",
