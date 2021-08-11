@@ -25,11 +25,13 @@ exports.TempoPrinter = class TempoPrinter
         process.stdout.write '\n'
     , 60 * 1000 / @tempo / @subdivision
   setPad: ({ pad }) -> @pads.push pad
+  unsetPad: ->
 
 exports.PadPrinter = class PadPrinter
   constructor: ->
   setPad: ({ pad }) ->
     console.log pad?.printerName()
+  unsetPad: ->
 
 exports.PadLayoutPrinter = class PadLayoutPrinter
   constructor: ->
